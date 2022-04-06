@@ -7,14 +7,15 @@ const SongList = ({charts}) => {
         return (
         <li key={index} > 
         Artist: {song["im:artist"]["label"]}
-        Song Title: {song.title.label}
+        <br></br>
+        Song: {song.title.label}
         </li>
         )
     });
 
     return(
         <div>
-            <h2>SongList will go here</h2>
+            <h2>The UK Top 20</h2>
             <SongDetails songNodes={songNodes}/>
         </div>
     )
