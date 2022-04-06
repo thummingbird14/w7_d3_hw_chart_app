@@ -5,7 +5,10 @@ const SongList = ({charts}) => {
 
     const songNodes = charts.map((song, index) => {
         return (
-        <li key={index} > Artist: {song["im:artist"]["label"]}</li>
+        <li key={index} > 
+        Artist: {song["im:artist"]["label"]}
+        Song Title: {song.title.label}
+        </li>
         )
     });
 
